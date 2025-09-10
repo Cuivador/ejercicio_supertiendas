@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFD6A5;
+}
+
+#cajaPrincipal{
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid #34495e;
+    box-shadow: 0 0 20px #0006;
+    background-color: #FFF3B0;
+    font-family:Georgia, sans-serif;
+    text-align: center;
+    
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+h2{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444444;
+}
+
+.cajaProductos, .campo{
+    color: #222222;
+}
+
+option, select, input{
+    font-size: 16px;
+    padding: 5px;
+    font-family:Georgia, sans-serif;
+}
+
+.labels{
+    font-size: 20px;
+    color: #555555;
+    display: block;
+    padding: 15px 0;
+}
+
+.resultado{
+    margin: 20px 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+.boton{
+    display: inline;
+}
+
+button{
+    padding: 8px;
+    background-color: #E0E0E0;
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    margin: 30px 40px 10px 0;
+}

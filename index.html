@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parcial_practico</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <div id="cajaPrincipal">
+        <h1>Supermercados la GUACA</h1>
+
+        <h2>¡Encuentranos, compra y llevate un botin!</h2>
+
+        <div class="cajaProductos">
+            <label class="labels" for="productos">Selecciona el producto</label>
+            <select name="productos" id="productos" onchange="precio()" >
+                <option value="">-------- Producto --------</option>
+                <option value="papa">Bolsa papa selecta 1.5kg</option>
+                <option value="arroz">Bolsa arroz 2.5kg </option>
+                <option value="azucar">Bolsa de azucar 1kg</option>
+                <option value="cafe">Cafe instantaneo 170g</option>
+                <option value="leche">Maxilitro leche 1.100ml</option>
+                <option value="manzana">Bolsa manzana 1kg</option>
+                <option value="harina">Bolsa harina de trigo 500g</option>
+                <option value="pan">Bolsa pan tajado</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label class="labels" for="precio">Precio</label>
+            <input type="number" id="precio" value=""  disabled />
+        </div>
+
+        <div class="campo"> 
+            <label class="labels" for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" />
+        </div>
+
+        <div class="resultado"><p id="subpago"></p></div>  
+        <div class="ressultado"><p id="totalCompra"></p></div>
+
+        <div class="boton">
+            <button id="subtotal" onclick="supermercado()">Calcular subtotal</button>
+        </div>
+
+        <div class="boton">
+            <button onclick="limpiar()">Limpiar</button>
+        </div>
+
+        <div class="boton">
+            <button onclick="totalizar()">Totalizar</button>
+        </div>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
