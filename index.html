@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parcial_practico</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="assets/icon/supermercado.png" type="image/png" />
+</head>
+
+<body>
+    <div id="cajaPrincipal">
+        <h1>Supermercados la GUACA</h1>
+        <h2>¡Encuentranos, compra y llevate un Tesoro!</h2>
+
+        <div class="cajaSecundaria">
+            <fieldset>
+                <legend>Control de productos</legend>
+                <form class="cajaProductos">
+                    <label class="labels" for="productos">Selecciona el producto</label>
+                    <select name="productos" id="productos" oninput="precio()">
+                        <option value="">-------- Producto --------</option>
+                        <option value="papa">Bolsa papa selecta 1.5kg</option>
+                        <option value="arroz">Bolsa arroz 2.5kg</option>
+                        <option value="azucar">Bolsa de azucar 1kg</option>
+                        <option value="cafe">Cafe instantaneo 170g</option>
+                        <option value="leche">Maxilitro leche 1.100ml</option>
+                        <option value="manzana">Bolsa manzana 1kg</option>
+                        <option value="harina">Bolsa harina de trigo 500g</option>
+                        <option value="pan">Bolsa pan tajado</option>
+                    </select>
+                </form>
+
+                <form class="campo">
+                    <label class="labels" for="precio">Precio</label>
+                    <input type="number" id="precio" value="" disabled />
+                </form>
+
+                <form class="campo">
+                    <label class="labels" for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" onblur="corregido2()" />
+                </form>
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Pago de usuario</legend>
+                <div class="campo salida">
+                    <label class="labels2" for="">Subtotal $</label>
+                    <input type="number" id="lSubtotal" disabled/>
+                </div>
+
+                <div class="campo salida">
+                    <label class="labels2" for="">Descuento 5% $</label>
+                    <input type="number" id="lDescuento" disabled/>
+                </div>
+
+                <div class="campo salida">
+                    <label class="labels2" for="">IVA 19% $</label>
+                    <input type="number" id="lIVa" disabled/>
+                </div>
+
+                <div class="campo salida">
+                    <label class="labels2" for="">Total producto $</label>
+                    <input type="number" id="lTotal" disabled/>
+                </div>
+
+                <div class="campo salida">
+                    <label class="labels2" for="">Total general venta $</label>
+                    <input type="number" id="lTotalGeneral" disabled/>
+                </div>
+        </fieldset>        
+        </div>
+
+        <div class="cajaSecundaria botones">
+            <button id="subtotal" class="boton" onclick="supermercado()">
+                <img src="assets/button/calcular.png" alt="Calcular subtotal" width="48" /><br />Subtotal
+            </button>
+
+            <button class="boton" onclick="limpiar()">
+                <img src="assets/button/limpiar.png" alt="Calcular subtotal" width="48" /><br />Limpiar
+            </button>
+
+            <button class="boton" onclick="totalizar()">
+                <img src="assets/button/totalizar.png" alt="Calcular subtotal" width="48" /><br />Totalizar
+            </button>
+
+            <button id="ventaDia" class="boton" onclick="ventaDia()" disabled>
+                <img src="assets/button/ventaDia.png" alt="Calcular subtotal" width="48" /><br />Venta del Dia
+            </button>
+        </div>
+    </div>
+
+    <div id="cajaVentas">
+        <p class="resultado"><span id="ventaDelDia"></span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFD6A5;
+}
+
+#cajaPrincipal, #cajaVentas{
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid #34495e;
+    box-shadow: 0 0 20px #0006;
+    background-color: #FFF3B0;
+    font-family:Georgia, sans-serif;
+    text-align: center;
+}
+/*caja de Venta del dia*/
+body #cajaVentas{
+    width: 30%;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+h2, legend{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444444;
+}
+
+.cajaProductos, .campo{
+    color: #222222;
+    margin: 15px 0;
+}
+
+.campo.salida{
+    margin: 10px 0;
+    text-align: right;
+    width: 70%;
+}
+
+option, select, input{
+    font-size: 16px;
+    padding: 5px;
+    font-family:Georgia, sans-serif;
+}
+input{
+    width: 35%;
+}
+
+.labels{
+    display: block;
+}
+
+
+.labels, .labels2{
+    font-size: 20px;
+    color: #555555;
+}
+
+.resultado{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/*botones*/
+.cajaSecundaria{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+.cajaSecundaria.botones{
+    width: 30%;
+}
+
+.boton{
+    padding: 8px;
+    background-color: #E0E0E0;
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    margin: 30px 40px 10px 0;
+    width: 128px;
+    border-radius: 15px;
+}
